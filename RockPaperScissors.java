@@ -30,6 +30,13 @@ public class RockPaperScissors {
    }
    return getMove();
   }
+
+  public boolean playAgain() {
+   System.out.print("Do you want to play again?");
+   String userInput = inputScanner.nextLine();
+   userInput = userInput.toUpperCase();
+   return userInput.charAt(0) == 'Y';
+  }
  }
 
  private class Computer {
