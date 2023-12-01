@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class RockPaperScissors {
@@ -19,7 +20,10 @@ public class RockPaperScissors {
 
  private class Computer {
   public Move getMove() {
-   return null;
+   Move[] moves = Move.values();
+   Random random = new Random();
+   int index = random.nextInt(moves.length);
+   return moves[index];
   }
  }
 
