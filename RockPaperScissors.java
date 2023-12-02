@@ -157,7 +157,7 @@ public class RockPaperScissors {
   }
 
   public static void main(String[] args) {
-    Move move = Move.ROCK;
-    System.out.println(move);
+    RockPaperScissors game = new RockPaperScissors();
+    game.startGame();
   }
 }
