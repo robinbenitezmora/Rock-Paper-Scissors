@@ -22,6 +22,15 @@ public class RockPaperScissors {
       // Should never reach here
       return 0;
     }
+
+    public void startGame() {
+      System.out.println("ROCK, PAPER, SCISSORS");
+      Move userMove = user.getMove();
+      Move computerMove = computer.getMove();
+      System.out.println("\nYour move " + userMove + ".");
+      System.out.println("Computer move " + computerMove + ".\n");
+    }
+
   }
 
   private class User {
@@ -66,8 +75,8 @@ public class RockPaperScissors {
     }
   }
 
-  private User user;
-  private Computer computer;
+  private static User user;
+  private static Computer computer;
   private int userScore;
   private int computerScore;
   private int numberOfGames;
